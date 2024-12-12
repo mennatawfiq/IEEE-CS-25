@@ -109,9 +109,7 @@ int main()
             cy = px.second;
         }
         reverse(path.begin(), path.end());
-        cout << "YES" << endl;
-        cout << path.length() << endl;
-        cout << path << endl;
+        cout << "YES" << endl << path.length() << endl << path << endl;
     }
     return 0;
 }
