@@ -1,3 +1,10 @@
+// core concept:
+// we could have looped on the grid cell by cell and check if the cell is valid to put a queen, but this will give a TLE so we needed an optimization.
+// the optimization is to use columns to loop, and then loop for a valid cell in each column. then we'll need to mark the left diagonal, right diagonal and row as attacked
+// so that it won't be valid to have a queen in it again.
+// the '15' is because we'll have a 15 diagonal from the top right to the left bottom for both right and left. use any three valid positions to proof the 'i+j' and 'i-j+7'.
+// ai + bj + c = <diagonal number>
+
 #include <bits/stdc++.h>
 using namespace std;
 
